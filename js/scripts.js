@@ -1,13 +1,8 @@
-$(document).ready(function() {
-  $("h1").click(function() {
-    alert("This is a header.");
-  });
+function add(number1, number2) {
+  return number1 + number2;
+}
 
-  $("p").click(function() {
-    alert("This is a paragraph.");
-  });
-
-  $("img").click(function() {
-    alert("This is an image.");
-  });
-});
+const number1 = parseInt(prompt("Enter a number:"));
+const number2 = parseInt(prompt("Enter another number:"));
+const result = add(number1, number2);
+alert(result);
